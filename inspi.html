@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inspi - E-commerce</title>
+  <style>
+    :root {
+      --primary: #2d6cdf;
+      --secondary: #f4f4f4;
+      --text: #333;
+      --white: #fff;
+      --dark: #222;
+    }
+    * {margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+    body {background:var(--secondary);color:var(--text);}
+    header {background:var(--white);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 5px rgba(0,0,0,0.1);position:sticky;top:0;z-index:1000;}
+    header h1 {color:var(--primary);font-weight:900;}
+    nav a {margin:0 1rem;text-decoration:none;color:var(--dark);font-weight:bold;}
+    nav a:hover {color:var(--primary);}
+    .cart {position:relative;font-size:1.5rem;cursor:pointer;}
+    .cart-count {position:absolute;top:-8px;right:-12px;background:red;color:white;font-size:0.8rem;padding:2px 6px;border-radius:50%;}
+    .hero {background:url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1350&q=80") center/cover no-repeat;height:350px;display:flex;flex-direction:column;justify-content:center;align-items:center;color:var(--white);text-shadow:2px 2px 6px rgba(0,0,0,0.6);text-align:center;}
+    .hero h2 {font-size:2.5rem;margin-bottom:1rem;}
+    .hero .btn {padding:0.7rem 1.5rem;background:var(--primary);color:var(--white);text-decoration:none;border-radius:5px;font-weight:bold;}
+    .hero .btn:hover {background:#1e4bb8;}
+    .products {padding:2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;}
+    .card {background:var(--white);border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);overflow:hidden;transition:transform 0.3s;}
+    .card:hover {transform:translateY(-5px);}
+    .card img {width:100%;height:200px;object-fit:cover;transition:transform 0.3s;}
+    .card:hover img {transform:scale(1.05);}
+    .card-body {padding:1rem;}
+    .card-body h3 {font-size:1.2rem;margin-bottom:0.5rem;}
+    .price {color:var(--primary);font-weight:bold;margin-bottom:1rem;}
+    .btn {display:inline-block;padding:0.5rem 1rem;background:var(--primary);color:var(--white);text-decoration:none;border-radius:5px;transition:background 0.3s;}
+    .btn:hover {background:#1e4bb8;}
+    footer {text-align:center;padding:1rem;background:var(--white);margin-top:2rem;box-shadow:0 -2px 5px rgba(0,0,0,0.1);}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Inspi</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="cart">🛒 <span class="cart-count">0</span></div>
+  </header>
+
+  <section class="hero">
+    <h2>Upgrade Your Tech Lifestyle</h2>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <section class="products" id="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603898037225-9e5f8a3f2e63?auto=format&fit=crop&w=800&q=80" alt="iPhone 14 Pro">
+      <div class="card-body">
+        <h3>iPhone 14 Pro</h3>
+        <p class="price">$999.99</p>
+        <a href="#" class="btn add-to-cart">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="" alt="MacBook Pro">
+      <div class="card-body">
+        <h3>MacBook Pro</h3>
+        <p class="price">$1999.99</p>
+        <a href="#" class="btn add-to-cart">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1619983081593-d92ad5c2f7b2?auto=format&fit=crop&w=800&q=80" alt="Sony WH-1000XM5">
+      <div class="card-body">
+        <h3>Sony WH-1000XM5</h3>
+        <p class="price">$349.99</p>
+        <a href="#" class="btn add-to-cart">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1592150621744-aca64f3d5e38?auto=format&fit=crop&w=800&q=80" alt="Apple Watch Series 9">
+      <div class="card-body">
+        <h3>Apple Watch Series 9</h3>
+        <p class="price">$399.99</p>
+        <a href="#" class="btn add-to-cart">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606813902914-2980b07c3bb1?auto=format&fit=crop&w=800&q=80" alt="PlayStation 5">
+      <div class="card-body">
+        <h3>Sony PlayStation 5</h3>
+        <p class="price">$499.99</p>
+        <a href="#" class="btn add-to-cart">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="" alt="iPad Pro">
+      <div class="card-body">
+        <h3>iPad Pro</h3>
+        <p class="price">$1099.99</p>
+        <a href="#" class="btn add-to-cart">Add to Cart</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Inspi. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const cartCount = document.querySelector('.cart-count');
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    let count = 0;
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        count++;
+        cartCount.textContent = count;
+      });
+    });
+  </script>
+</body>
+</html>

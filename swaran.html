@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swaran's Profile</title>
+  <link rel="icon" href="icon.ico" type="image/x-icon" />
+  <style>
+    /* Background Gradient */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #3a3a5f);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Glassmorphism Container */
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 600px;
+      width: 90%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 150px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin: 20px 0;
+    }
+
+    a {
+      color: #00ffff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: rgba(255, 255, 255, 0.2);
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #00ffff;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #00cccc;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome</h1>
+      <p>This is Swaran K N</p>
+    </header>
+    <img src="swaran.JPG" alt="Swaran's Picture" />
+    <section>
+      <h2>About Me</h2>
+      <p>Hello! I'm passionate about creativity and technology.</p>
+    </section>
+    <section>
+      <h2>Contact</h2>
+      <p>Let's connect!</p>
+      <p>
+        <a href="mailto:swaru14a@gmail.com">Email</a> |
+        <a href="https://www.linkedin.com/in/spoorthi-reddy-5bb05b348">LinkedIn</a>
+      </p>
+    </section>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>Graphic Design</li>
+        <li>Photography</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Portfolio</h2>
+      <p><a href="main.html">Project 1</a></p>
+    </section>
+    <section>
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2025 Swaran. Built by Warriorswayhub.</p>
+    </footer>
+  </div>
+</body>
+</html>
